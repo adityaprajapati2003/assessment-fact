@@ -1,0 +1,232 @@
+
+.main-container-accordin{
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 1), 0 4px 6px 0 rgba(0, 5, 0, 0.19);
+    .container-closed{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 29vw;
+        align-items: center;
+        padding: 1rem;
+        div{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .user-image{
+                width: 4rem;
+                height: 4rem;
+                border-radius: 50%;
+            }
+            .username{
+                font-size: 1.3rem;
+                margin-left: 1.5rem;
+            }
+        }
+        .move{
+            border:none;
+            margin-top: 0.5rem;
+            background-color: white;
+            .icon{
+                width: 1rem;
+                height: 1rem;
+                cursor: pointer;
+            }
+        }
+        .blurred{
+            filter: blur(1px);
+        }
+    }
+
+    .box-opened{
+        padding: 1.5rem;
+        padding-top: 0;
+        width: 28vw;
+        form{
+            .box1{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 0;
+                margin: 0;
+                margin-bottom: 0.5rem;
+                .small-box{
+                    .header{
+                        list-style: none;
+                        font-size: 1rem;
+                        margin: 0;
+                        color: gray;
+                    }
+                    div{
+                        display: flex;
+                        flex-direction: column;
+                        .input-value{
+                            outline: none;
+                            width: 8vw;
+                            height: 1.5rem;
+                            margin-top: 0.3rem;
+                            border-radius: 5px;
+                            border: 1px solid gray;
+                        }
+                        .error-message{
+                            width: 8rem;
+                            color: red;
+                        }
+                    }
+                    .value{
+                        margin-top: 0.3rem;
+                        font-size: 1rem;
+                        list-style: none;
+                    }
+                }
+            }
+    
+            .box2{
+                .header{
+                    font-size: 1rem;
+                    list-style: none;
+                    margin: 0;
+                    margin-bottom: 0.5rem;
+                    color: gray;
+                }
+                .paragraph{
+                    font-size: 1rem;
+                }
+                div{
+                    .textarea-value{
+                        width:100%;
+                        height: 25vh;
+                        overflow: hidden;
+                        border-radius: 10px;
+                    }
+                    .error-message{
+                        width: 8rem;
+                        color: red;
+                    }
+                }
+            }
+    
+            .box3{
+                margin-top: 5px;
+                .edit-btn{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: end;
+                   .btns{
+                    border: none;
+                    background-color: white;
+                    .icon{
+                        margin-right: 0.5rem;
+                        width: 2rem;
+                        height: 2rem;
+                        cursor: pointer;
+                    }
+                   }
+                }
+                .normal-state-btn{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: end;
+                    button{
+                        border: none;
+                        background-color: white;
+                        .icon{
+                            width: 2rem;
+                            height: 2rem;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1200px){
+    .main-container-accordin{
+        .container-closed{
+            width: 45vw;
+        }
+    
+        .box-opened{
+            width: 45vw;
+            form{
+                .box1{
+                    .small-box{
+                        div{
+                            .input-value{
+                                width: 10vw;
+                            }
+                            .error-message{
+                                width: 10rem;
+                            }
+                        }
+                    }
+                }
+        
+                .box2{
+                    div{
+                        .textarea-value{
+                            width:100%;
+                        }
+                        .error-message{
+                            width: 10rem;
+                            color: red;
+                        }
+                    }
+                }
+        
+            }
+        }
+    }
+}
+
+@media screen and (max-width:700px){
+    .main-container-accordin{
+        .container-closed{
+            width: 45vw;
+        }
+    
+        .box-opened{
+            width: 45vw;
+            form{
+                .box1{
+                    .small-box{
+                        div{
+                            .input-value{
+                                width: 12vw;
+                            }
+                        }
+                    }
+                }
+        
+            }
+        }
+    }
+}
+
+@media screen and (max-width:700px){
+    .main-container-accordin{
+        .container-closed{
+            width: 60vw;
+        }
+    
+        .box-opened{
+            width: 60vw;
+            form{
+                .box1{
+                    .small-box{
+                        div{
+                            .input-value{
+                                width: 15vw;
+                            }
+                        }
+                    }
+                }
+        
+            }
+        }
+    }
+}

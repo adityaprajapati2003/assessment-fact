@@ -1,0 +1,13 @@
+
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+  min-width: 320px;
+  min-height: 100vh;
+  background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+  font-family: 'Times New Roman', Times, serif;
+}
+

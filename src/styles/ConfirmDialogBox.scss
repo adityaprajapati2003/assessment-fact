@@ -1,0 +1,75 @@
+
+.message-box{
+    width: 20rem;
+    height: 5rem;
+    position: absolute;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 1), 0 4px 6px 0 rgba(0, 5, 0, 0.19);
+    margin: 2.5rem;
+
+    div{
+        .message-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .message{
+                margin: 0;
+                font-size: 1rem;
+            }
+            button{
+                border: none;
+                background-color: white;
+                .icon-cross{
+                    width: 1rem;
+                    height: 1rem;
+                    cursor: pointer;
+                }
+            }
+        }
+        .btn-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            margin-top: 2rem;
+            .btn-cancel{
+                background-color: white;
+                width: 5rem;
+                height: 2rem;
+                border:1px solid gray;
+                border-radius: 10px;
+                margin-right: 1rem;
+                cursor: pointer;
+            }
+            .btn-delete{
+                background-color: orangered;
+                width: 5rem;
+                height: 2rem;
+                border:none;
+                border-radius: 10px;
+                color: azure;
+                cursor: pointer;
+
+            }
+        }
+    }
+}
+@media screen and (max-width:800px) {
+    .message-box{
+        margin-left: -10px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .message-box{
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .message-box{
+        margin-left: -5%;
+    }
+}
